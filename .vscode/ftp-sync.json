@@ -1,0 +1,28 @@
+{
+    "remotePath": "/www/pwa",
+    "host": "linweb05.sbv.webhuset.no",
+    "username": "97766_ftp",
+    "password": "PREjyTO68",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": true,
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": "/Applications/MAMP/htdocs/pwa/"
+    }
+}
