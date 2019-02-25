@@ -8,21 +8,10 @@ if ('serviceWorker' in navigator) {
     })
 }
 
-// Promt Android users for install
-// let deferredPrompt;
-
-// window.addEventListener('beforeinstallprompt', (e) => {
-//     // Prevent Chrome 67 and earlier from automatically showing the prompt
-//     e.preventDefault();
-//     // Stash the event so it can be triggered later.
-//     deferredPrompt = e;
-//     // Update UI notify the user they can add to home screen
-//     // showAddToHomeScreen();
-//     console.log('Add');
-// });
-
-// function showAddToHomeScreen() {
-//     var btnAdd = document.querySelector(".btnAdd");
-//     btnAdd.style.display = "block";
-
-// }
+window.addEventListener('beforeinstallprompt', (event) => {
+    console.log('👍', 'beforeinstallprompt', event);
+    // Stash the event so it can be triggered later.
+    window.deferredPrompt = event;
+    // Remove the 'hidden' class from the install button container
+    divInstall.classList.toggle('hidden', false);
+});
